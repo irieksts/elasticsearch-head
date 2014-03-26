@@ -3778,7 +3778,7 @@
 			} else if(spec.type === '_all') {
 				ops = ["query_string"];
 			} else if(spec.type === 'string') {
-				ops = ["term", "wildcard", "prefix", "fuzzy", "range", "query_string", "text"];
+				ops = ["term", "wildcard", "prefix", "fuzzy", "range", "query_string", "match"];
 			} else if(spec.type === 'long' || spec.type === 'integer' || spec.type === 'float' ||
 					spec.type === 'byte' || spec.type === 'short' || spec.type === 'double') {
 				ops = ["term", "range", "fuzzy", "query_string"];
